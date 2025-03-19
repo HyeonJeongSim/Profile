@@ -69,12 +69,13 @@ header .head_ttl strong { color: #3a76f0;}
     padding-top: 8px;
   }
 #contentArea .award .toggle-container dl dd{
-    width: 800px;
-    column-gap: 5%;
-    
+    width: 75%;
+}
+#contentArea .award .toggle-container dl .awardInfo{
+    width: 25%;
 }
 
-#contentArea .toggle-container dt { width: 30%; font-size: 1.2em; font-weight: 500; }
+#contentArea .toggle-container dt { font-size: 1.2em; font-weight: 500; }
 #contentArea .toggle-container dt>span{
     color: #3a76f0;
 }
@@ -212,10 +213,10 @@ header .head_ttl strong { color: #3a76f0;}
 }
 
 #contentArea .expe .toggle-container dl {
-    gap: 3%;
+    gap: 3% 0;
 }
 
-#contentArea .toggle-container .list dd{
+#contentArea .expe .toggle-container .list dd{
     width: 100%;
 }
 
@@ -225,6 +226,25 @@ header .head_ttl strong { color: #3a76f0;}
     font-size: 1.1rem;
 }
 
+/* 수상내역 */
+
+#contentArea .award .toggle-container dl{
+    width: 100%;
+    justify-content: space-between;
+    gap: 11%;
+}
+#contentArea .award .toggle-container dl dt{
+    width: 40%;
+}
+
+#contentArea .award .toggle-container dl>dd>dl {
+    width: 100%;
+    gap: 0;
+    justify-content: space-evenly;
+}
+#contentArea .award .toggle-container dl>dd>dl>dt{
+    width: 15%;
+}
 
 
 /* footer */
