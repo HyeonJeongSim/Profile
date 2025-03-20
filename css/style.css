@@ -465,7 +465,10 @@ section:nth-child(6) {background: #d0d5ff;}
     color: #fff;
 }
 #section4 .name{
-    color: #ccc;
+    color: #333;
+}
+#section5 .name {
+    color: #fff;
 }
 .profileInfo{
     height: 100%;
