@@ -389,6 +389,7 @@ section:nth-child(6) {background: #d0d5ff;} */
     width: 10%;
     border-radius: 50%;
     border: 1px solid #d6d6d6;
+    background: #fff;
 }
 
 @keyframes pulse {
@@ -538,6 +539,9 @@ section:nth-child(6) {background: #d0d5ff;} */
     color: #fff;
 }
 
+#section4 ul li dl dd>strong{
+    color: #F56300;
+}
 #section5 .name {
     color: #333;
 }
@@ -627,6 +631,8 @@ section:nth-child(6) {background: #d0d5ff;} */
 
 .profileImage img {
     width: 85%;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10%;
 }
 
 #section1 .profileMore {
@@ -988,7 +994,7 @@ section:nth-child(6) {background: #d0d5ff;} */
 }
 
 #section5 .colorFont dd>p:nth-of-type(3) {
-    background: #F56300;
+    background: #00B2E3;
 }
 
 #section5 .site {
@@ -1017,7 +1023,7 @@ section:nth-child(6) {background: #d0d5ff;} */
 }
 
 #section5 ul li dl dd>strong {
-    color: #3a76f0;
+    color: #45A5FC
 }
 
 .github {
