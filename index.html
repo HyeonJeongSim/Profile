@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>심현정 포트폴리오</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>심현정 포트폴리오</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/jquery.fullPage.min.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./common.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/jquery.fullPage.min.css">
-  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
-</head>
-
-<body>
-  <header>
-    <h1 class="hidden">심현정 포트폴리오</h1>
-    <nav>
-      <h2 class="hidden">글로벌 네비게이션</h2>
-      <ul id="menu">
+  <body>
+    <header>
+      <h1 class="hidden">심현정 포트폴리오</h1>
+      <nav>
+        <h2 class="hidden">글로벌 네비게이션</h2>
+        <ul id="menu">
           <li data-menuanchor="firstPage" class="active">
             <a href="#firstPage">
               <h3>Home</h3>
@@ -51,497 +56,591 @@
               <h3>Review</h3>
             </a>
           </li>
-      </ul>
-    </nav>
-  </header>
+        </ul>
+      </nav>
+    </header>
 
-  <article id="content">
-    <h1 class="hidden">본문 영역</h1>
-    <div id="fullpage">
-      <!-- 메인화면 -->
-      <section class="section" id="section0">
-        <h2 class="hidden">채팅창</h2>
-        <div class="container">
-          <div class="chat-list-container">
-            <div class="chat-header">
-              <div class="profile-img">
-                <img src="./images/me2.png" alt="프로필">
-                <p class="chat-title">채팅</p>
+    <article id="content">
+      <h1 class="hidden">본문 영역</h1>
+      <div id="fullpage">
+        <!-- 메인화면 -->
+        <section class="section" id="section0">
+          <h2 class="hidden">채팅창</h2>
+          <div class="container">
+            <div class="chat-list-container">
+              <div class="chat-header">
+                <div class="profile-img">
+                  <img src="./images/me2.png" alt="프로필" />
+                  <p class="chat-title">채팅</p>
+                </div>
+                <i class="fa-solid fa-comments"></i>
               </div>
-              <i class="fa-solid fa-comments"></i>
+              <div class="search-bar">
+                <input
+                  type="text"
+                  placeholder="채팅방 검색 (이름 또는 채팅방 검색)"
+                />
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="chat-list">
+                <div
+                  class="chat-item"
+                  onclick="openChat(this, '심현정님 포트폴리오 소개방')"
+                >
+                  <div class="profile-img">
+                    <img src="./images/profile1.png" alt="프로필" />
+                  </div>
+                  <div class="chat-info">
+                    <div class="chat-name">
+                      심현정님 포트폴리오 소개방 <span>5</span>
+                    </div>
+                    <div class="chat-preview">프로필 바로가기</div>
+                  </div>
+                  <div class="chat-meta">
+                    <p class="number">2</p>
+                    <div class="chat-time">방금</div>
+                  </div>
+                </div>
+                <div class="chat-item">
+                  <div class="profile-img">
+                    <img src="./images/profile2.png" alt="프로필" />
+                  </div>
+                  <div class="chat-info">
+                    <div class="chat-name">디자인팀 여울 과장님</div>
+                    <div class="chat-preview">(이모티콘)</div>
+                  </div>
+                  <div class="chat-meta">
+                    <div class="chat-time">오후 2:40</div>
+                  </div>
+                </div>
+                <div class="chat-item">
+                  <div class="profile-img">
+                    <img src="./images/profile3.png" alt="프로필" />
+                  </div>
+                  <div class="chat-info">
+                    <div class="chat-name">개발2팀 <span>6</span></div>
+                    <div class="chat-preview">
+                      오후 4시에 코드 리뷰 있을 예정입니다.
+                    </div>
+                  </div>
+                  <div class="chat-meta">
+                    <div class="chat-time">오후 2:20</div>
+                  </div>
+                </div>
+                <div class="chat-item">
+                  <div class="profile-img">
+                    <img src="./images/profile5.png" alt="프로필" />
+                  </div>
+                  <div class="chat-info">
+                    <div class="chat-name">기획팀 애플PM님</div>
+                    <div class="chat-preview">(이모티콘)</div>
+                  </div>
+                  <div class="chat-meta">
+                    <div class="chat-time">오후 2:17</div>
+                  </div>
+                </div>
+                <div class="chat-item">
+                  <div class="profile-img">
+                    <img src="./images/profile6.png" alt="프로필" />
+                  </div>
+                  <div class="chat-info">
+                    <div class="chat-name">갑돌이</div>
+                    <div class="chat-preview">퇴근하고 치맥 ㄱㄱ</div>
+                  </div>
+                  <div class="chat-meta">
+                    <div class="chat-time">오후 1:06</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="search-bar">
-              <input type="text" placeholder="채팅방 검색 (이름 또는 채팅방 검색)">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div class="chat-list">
-              <div class="chat-item" onclick="openChat(this, '심현정님 포트폴리오 소개방')">
+
+            <div class="chat-conversation">
+              <div class="conversation-header">
                 <div class="profile-img">
-                  <img src="./images/profile1.png" alt="프로필">
+                  <img src="./images/profile1.png" alt="프로필이미지" />
                 </div>
-                <div class="chat-info">
-                  <div class="chat-name">심현정님 포트폴리오 소개방 <span>5</span></div>
-                  <div class="chat-preview">프로필 바로가기</div>
+                <p id="chat-room-name">채팅방 이름</p>
+              </div>
+
+              <div class="messages">
+                <div class="messagesName">
+                  <img src="./images/profile.png" alt="프로필이미지" />
+                  <span>너굴 팀장님</span>
                 </div>
-                <div class="chat-meta">
-                  <p class="number">
-                    2
-                  </p>
-                  <div class="chat-time">방금</div>
+
+                <div class="messageWrap">
+                  <div class="message received">반갑습니다!</div>
+                  <div class="message received">
+                    지금부터 <strong>심현정</strong>님의
+                    <strong>포트폴리오 소개</strong>
+                    <br />
+                    시작할게요😄
+                  </div>
+                </div>
+
+                <div class="messageImg">
+                  <img src="./images/me2.png" alt="프로필이미지" />
+                  <span>심현정</span>
+                </div>
+                <div class="messageWrap">
+                  <div class="message sent">넵, 시작하겠습니다!</div>
+                  <div class="message sent">
+                    <a href="#secondPage">프로필 바로가기</a>
+                  </div>
                 </div>
               </div>
-              <div class="chat-item">
-                <div class="profile-img">
-                  <img src="./images/profile2.png" alt="프로필">
-                </div>
-                <div class="chat-info">
-                  <div class="chat-name">디자인팀 여울 과장님</div>
-                  <div class="chat-preview">(이모티콘)</div>
-                </div>
-                <div class="chat-meta">
-                  <div class="chat-time">오후 2:40</div>
-                </div>
-              </div>
-              <div class="chat-item">
-                <div class="profile-img">
-                  <img src="./images/profile3.png" alt="프로필">
-                </div>
-                <div class="chat-info">
-                  <div class="chat-name">개발2팀 <span>6</span></div>
-                  <div class="chat-preview">오후 4시에 코드 리뷰 있을 예정입니다.</div>
-                </div>
-                <div class="chat-meta">
-                  <div class="chat-time">오후 2:20</div>
-                </div>
-              </div>
-              <div class="chat-item">
-                <div class="profile-img">
-                  <img src="./images/profile5.png" alt="프로필">
-                </div>
-                <div class="chat-info">
-                  <div class="chat-name">기획팀 애플PM님</div>
-                  <div class="chat-preview">(이모티콘)</div>
-                </div>
-                <div class="chat-meta">
-                  <div class="chat-time">오후 2:17</div>
-                </div>
-              </div>
-              <div class="chat-item">
-                <div class="profile-img">
-                  <img src="./images/profile6.png" alt="프로필">
-                </div>
-                <div class="chat-info">
-                  <div class="chat-name">갑돌이</div>
-                  <div class="chat-preview">퇴근하고 치맥 ㄱㄱ</div>
-                </div>
-                <div class="chat-meta">
-                  <div class="chat-time">오후 1:06</div>
-                </div>
+              <div class="message-input">
+                <input type="text" placeholder="메세지 입력" />
+                <button><i class="fa-solid fa-arrow-up"></i></button>
               </div>
             </div>
           </div>
+        </section>
 
-          <div class="chat-conversation">
-            <div class="conversation-header">
-              <div class="profile-img">
-                <img src="./images/profile1.png" alt="프로필이미지">
-              </div>
-              <p id="chat-room-name">채팅방 이름</p>
-            </div>
+        <!-- 프로필 -->
+        <section class="section" id="section1">
+          <h4 class="hidden">심현정 프로필</h4>
+          <div class="sectionWrap">
+            <ul>
+              <li><img src="./images/profile.png" alt="프로필 이미지" /></li>
+              <li>심현정님을 짧게 소개해주세요!</li>
+            </ul>
+            <p class="name">너굴 팀장님</p>
+            <div class="profileWrap">
+              <div class="profileInfo">
+                <p>
+                  반갑습니다, <br />
+                  <span>소통</span>과 <span>협업</span>을 좋아하는
+                  <span>심현정</span>입니다.
+                </p>
 
-
-            <div class="messages">
-              <div class="messagesName">
-                <img src="./images/profile.png" alt="프로필이미지">
-                <span>너굴 팀장님</span>
-              </div>
-
-              <div class="messageWrap">
-                <div class="message received">
-                  반갑습니다!
-                </div>
-                <div class="message received">
-                  지금부터 <strong>심현정</strong>님의 <strong>포트폴리오 소개</strong>
-                  <br>
-                  시작할게요😄
-                </div>
-              </div>
-
-              <div class="messageImg">
-                <img src="./images/me2.png" alt="프로필이미지">
-                <span>심현정</span>
-              </div>
-              <div class="messageWrap">
-                <div class="message sent">
-                  넵, 시작하겠습니다!
-                </div>
-                <div class="message sent">
-                  <a href="#secondPage">프로필 바로가기</a>
-                </div>
-              </div>
-            </div>
-            <div class="message-input">
-              <input type="text" placeholder="메세지 입력">
-              <button><i class="fa-solid fa-arrow-up"></i></button>
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-      <!-- 프로필 -->
-      <section class="section" id="section1">
-        <h4 class="hidden">심현정 프로필</h4>
-        <div class="sectionWrap">
-          <ul>
-            <li><img src="./images/profile.png" alt="프로필 이미지"></li>
-            <li>심현정님을 짧게 소개해주세요!</li>
-          </ul>
-          <p class="name">너굴 팀장님</p>
-          <div class="profileWrap">
-            <div class="profileInfo">
-              <p>반갑습니다, <br>
-                <span>소통</span>과 <span>협업</span>을 좋아하는
-                <span>심현정</span>입니다.
-              </p>
-
-              <dl>
-                <dt>PERSONAL INFO</dt>
-                <dd>SIM, HYEON JEONG /</dd>
-                <dd>1998.10.28</dd>
-              </dl>
-
-              <dl>
-                <dt>CONTACT</dt>
-                <dd>010-7595-3299 /</dd>
-                <dd>hj3296000@naver.com</dd>
-              </dl>
-
-              <dl>
-                <dt>TECH STACK</dt>
-                <dd>
-                  <ul>
-                    <li><img src="./images/html5.png" alt=""></li>
-                    <li><img src="./images/css3.png" alt=""></li>
-                    <li><img src="./images/js.png" alt=""></li>
-                    <li><img src="./images/jquery.png" alt=""></li>
-                    <li><img src="./images/react.png" alt=""></li>
-                    <li><img src="./images/firebase.png" alt=""></li>
-                    <li><img src="./images/ajax.png" alt=""></li>
-                    <li><img src="./images/json.png" alt=""></li>
-                    <li><img src="./images/php.svg" alt=""></li>
-                  </ul>
-                  <ul>
-                    <li><img src="./images/mysql.png" alt=""></li>
-                    <li><img src="./images/typescript.png" alt=""></li>
-                    <li><img src="./images/bootstrap.png" alt=""></li>
-                    <li><img src="./images/github.png" alt=""></li>
-                    <li><img src="./images/vscode.png" alt=""></li>
-                    <li><img src="./images/figma.png" alt=""></li>
-                    <li><img src="./images/photoshop.png" alt=""></li>
-                    <li><img src="./images/illur.png" alt=""></li>
-                    <li><img src="./images/Premierepro.png" alt=""></li>
-                  </ul>
-                </dd>
-              </dl>
-            </div>
-
-            <div class="profileImage">
-              <img src="./images/me.jpg" alt="">
-            </div>
-          </div>
-
-          <ul class="profileMore">
-            <li><a href="./resume/resume.html" target="_blank">Resume</a></li>
-            <li><a href="https://github.com/HyeonJeongSim/portfolio" target="_blank">GitHub</a></li>
-            <li><a href="./images/심현정_스토리보드.pdf" target="_blank">Storyboard</a></li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- 한국마이콤 -->
-      <section class="section" id="section2">
-        <h2 class="hidden">한국마이콤 PC 프로젝트</h2>
-        <div class="sectionWrap">
-          <ul>
-            <li><img src="./images/profile.png" alt="프로필 이미지"></li>
-            <li>첫번째 프로젝트에 대해 소개해주세요!😊</li>
-          </ul>
-          <p class="name">너굴 팀장님</p>
-
-          <ul>
-            <li>네, 첫번째로 <span>기업형 PC 프로젝트</span>를 소개해드릴게요!😄</li>
-            <li>
-              <div class="imgBox">
-                <img class="pc" src="./images/모니터3.png" alt="">
-                <img class="gif" src="./images/pc.gif" alt="">
-              </div>
-              <dl>
-                <dt>한국마이콤 (MYCOM)
-                  <a class="site" href="https://hj3296000.mycafe24.com/" target="_blank">바로가기
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </dt>
-                <dd>XHTML 1.0 기반 사이트를 HTML5와 CSS3로 재구현했습니다.
-                  <strong>시멘틱 태그를 활용해 SEO 최적화 및 아웃라인을 재구성</strong>했으며,
-                  <strong>jQuery로 header 및 nav 영역의 드롭다운 기능을 적용</strong>했습니다.
-                  또한, <strong>이미지로 제공되던 텍스트를 웹 폰트로 변경</strong>하여
-                  사용자 경험을 향상했습니다.
-                </dd>
                 <dl>
-                  <dt>제작스킬</dt>
-                  <dd>HTML5, CSS3, JavaScript(ES6), jQuery, AJAX, JSON,
-                    My-SQL & PHP(회원가입/로그인/게시판/검색),
-                    Figma, Adobe Photoshop, Adobe Illustrator,
-                    W3C 웹표준 통합 마크업 검사(html5/css3),
-                    웹접근성검사(K-WAH), 크로스브라우징 완료</dd>
+                  <dt>PERSONAL INFO</dt>
+                  <dd>SIM, HYEON JEONG /</dd>
+                  <dd>1998.10.28</dd>
                 </dl>
-                <div class="wrap">
-                  <dl class="colorFont">
-                    <dt>색상 / 폰트</dt>
+
+                <dl>
+                  <dt>CONTACT</dt>
+                  <dd>010-7595-3299 /</dd>
+                  <dd>hj3296000@naver.com</dd>
+                </dl>
+
+                <dl>
+                  <dt>TECH STACK</dt>
+                  <dd>
+                    <ul>
+                      <li><img src="./images/html5.png" alt="" /></li>
+                      <li><img src="./images/css3.png" alt="" /></li>
+                      <li><img src="./images/js.png" alt="" /></li>
+                      <li><img src="./images/jquery.png" alt="" /></li>
+                      <li><img src="./images/react.png" alt="" /></li>
+                      <li><img src="./images/firebase.png" alt="" /></li>
+                      <li><img src="./images/ajax.png" alt="" /></li>
+                      <li><img src="./images/json.png" alt="" /></li>
+                      <li><img src="./images/php.svg" alt="" /></li>
+                    </ul>
+                    <ul>
+                      <li><img src="./images/mysql.png" alt="" /></li>
+                      <li><img src="./images/typescript.png" alt="" /></li>
+                      <li><img src="./images/bootstrap.png" alt="" /></li>
+                      <li><img src="./images/github.png" alt="" /></li>
+                      <li><img src="./images/vscode.png" alt="" /></li>
+                      <li><img src="./images/figma.png" alt="" /></li>
+                      <li><img src="./images/photoshop.png" alt="" /></li>
+                      <li><img src="./images/illur.png" alt="" /></li>
+                      <li><img src="./images/Premierepro.png" alt="" /></li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+
+              <div class="profileImage">
+                <img src="./images/me.jpg" alt="" />
+              </div>
+            </div>
+
+            <ul class="profileMore">
+              <li><a href="./resume/resume.html" target="_blank">Resume</a></li>
+              <li>
+                <a
+                  href="https://github.com/HyeonJeongSim/portfolio"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a href="./images/심현정_스토리보드.pdf" target="_blank"
+                  >Storyboard</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 한국마이콤 -->
+        <section class="section" id="section2">
+          <h2 class="hidden">한국마이콤 PC 프로젝트</h2>
+          <div class="sectionWrap">
+            <ul>
+              <li><img src="./images/profile.png" alt="프로필 이미지" /></li>
+              <li>첫번째 프로젝트에 대해 소개해주세요!😊</li>
+            </ul>
+            <p class="name">너굴 팀장님</p>
+
+            <ul>
+              <li>
+                네, 첫번째로 <span>기업형 PC 프로젝트</span>를 소개해드릴게요!😄
+              </li>
+              <li>
+                <div class="imgBox">
+                  <img class="pc" src="./images/모니터3.png" alt="" />
+                  <img class="gif" src="./images/pc.gif" alt="" />
+                </div>
+                <dl>
+                  <dt>
+                    한국마이콤 (MYCOM)
+                    <a
+                      class="site"
+                      href="https://hj3296000.mycafe24.com/"
+                      target="_blank"
+                      >바로가기
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </dt>
+                  <dd>
+                    XHTML 1.0 기반 사이트를 HTML5와 CSS3로 재구현했습니다.
+                    <strong
+                      >시멘틱 태그를 활용해 SEO 최적화 및 아웃라인을
+                      재구성</strong
+                    >했으며,
+                    <strong
+                      >jQuery로 header 및 nav 영역의 드롭다운 기능을
+                      적용</strong
+                    >했습니다. 또한,
+                    <strong>이미지로 제공되던 텍스트를 웹 폰트로 변경</strong
+                    >하여 사용자 경험을 향상했습니다.
+                  </dd>
+                  <dl>
+                    <dt>제작스킬</dt>
                     <dd>
-                      <p>
-                        <em class="hidden">red</em>
-                      </p>
-                      <p><em class="hidden">red</em></p>
-                      <p><em class="hidden">red</em></p>
-                      <span>/ Noto Sans KR,</span>
-                      <span>Roboto</span>
+                      HTML5, CSS3, JavaScript(ES6), jQuery, AJAX, JSON, My-SQL &
+                      PHP(회원가입/로그인/게시판/검색), Figma, Adobe Photoshop,
+                      Adobe Illustrator, W3C 웹표준 통합 마크업
+                      검사(html5/css3), 웹접근성검사(K-WAH), 크로스브라우징 완료
                     </dd>
                   </dl>
-                  <dl class="parti">
-                    <dt>제작인원</dt>
-                    <dd>1인 기여도 (100%)</dd>
-                  </dl>
-                </div>
-              </dl>
-            </li>
-          </ul>
-        </div>
-      </section>
+                  <div class="wrap">
+                    <dl class="colorFont">
+                      <dt>색상 / 폰트</dt>
+                      <dd>
+                        <p>
+                          <em class="hidden">red</em>
+                        </p>
+                        <p><em class="hidden">red</em></p>
+                        <p><em class="hidden">red</em></p>
+                        <span>/ Noto Sans KR,</span>
+                        <span>Roboto</span>
+                      </dd>
+                    </dl>
+                    <dl class="parti">
+                      <dt>제작인원</dt>
+                      <dd>1인 기여도 (100%)</dd>
+                    </dl>
+                  </div>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-      <!-- 모바일 -->
-      <!-- <div class="section" id="section3">
+        <!-- 모바일 -->
+        <!-- <div class="section" id="section3">
       
       </div> -->
-      <!-- 애플 -->
-      <section class="section" id="section4">
-        <h2 class="hidden">애플 반응형 프로젝트</h2>
-        <div class="sectionWrap">
-          <ul>
-            <li><img src="./images/profile.png" alt="프로필 이미지"></li>
-            <li>멋진데요?!
-              세번째 프로젝트는 무엇인가요?😲
-            </li>
-          </ul>
-          <p class="name">너굴 팀장님</p>
-          <ul>
-            <li>세번째로는 <span>반응형 프로젝트</span>를 진행했습니다!🧡</li>
-            <li>
-              <div class="imgBox">
-                <img class="pc" src="./images/모니터3.png" alt="">
-                <img class="gif" src="./images/pc_Apple.gif" alt="">
-                <img class="ipad" src="./images/아이패드.png" alt="">
-                <img class="mobile" src="./images/모바일.png" alt="">
-              </div>
-              <dl>
-                <dt>애플 (APPLE)
-                  <a class="site" href="https://hj3296000.mycafe24.com/media" target="_blank">
-                    바로가기
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </dt>
-                <dd><strong>Media Query</strong>를 활용해 <strong>디바이스별 해상도</strong>에 최적화된 UI를 설계하고, <br>
-                  <strong>Flex와 Grid</strong>를 사용하여 다양한 레이아웃을 적용했습니다.
-                  <strong>Magnific Popup 플러그인</strong>으로 <strong>영상이 페이지 내부에서
-                    팝업 형태로 재생</strong>되도록 구현했습니다.
-                </dd>
-
+        <!-- 애플 -->
+        <section class="section" id="section4">
+          <h2 class="hidden">애플 반응형 프로젝트</h2>
+          <div class="sectionWrap">
+            <ul>
+              <li><img src="./images/profile.png" alt="프로필 이미지" /></li>
+              <li>멋진데요?! 세번째 프로젝트는 무엇인가요?😲</li>
+            </ul>
+            <p class="name">너굴 팀장님</p>
+            <ul>
+              <li>세번째로는 <span>반응형 프로젝트</span>를 진행했습니다!🧡</li>
+              <li>
+                <div class="imgBox">
+                  <img class="pc" src="./images/모니터3.png" alt="" />
+                  <img class="gif" src="./images/pc_Apple.gif" alt="" />
+                  <img class="ipad" src="./images/아이패드.png" alt="" />
+                  <img class="mobile" src="./images/모바일.png" alt="" />
+                </div>
                 <dl>
-                  <dt>제작스킬</dt>
-                  <dd>HTML5, CSS3(Media Query), JavaScript, jQuery, AJAX, JSON,
-                    Figma, Adobe Premier Pro, Adobe Photoshop, Adobe Illustrator,
-                    W3C 웹표준 통합 마크업 검사(html5/css3),
-                    웹접근성검사(K-WAH), 크로스브라우징 완료</dd>
-                </dl>
+                  <dt>
+                    애플 (APPLE)
+                    <a
+                      class="site"
+                      href="https://hj3296000.mycafe24.com/media"
+                      target="_blank"
+                    >
+                      바로가기
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </dt>
+                  <dd>
+                    <strong>Media Query</strong>를 활용해
+                    <strong>디바이스별 해상도</strong>에 최적화된 UI를 설계하고,
+                    <br />
+                    <strong>Flex와 Grid</strong>를 사용하여 다양한 레이아웃을
+                    적용했습니다. <strong>Magnific Popup 플러그인</strong>으로
+                    <strong>영상이 페이지 내부에서 팝업 형태로 재생</strong
+                    >되도록 구현했습니다.
+                  </dd>
 
-                <div class="wrap">
-                  <dl class="colorFont">
-                    <dt>색상 / 폰트</dt>
+                  <dl>
+                    <dt>제작스킬</dt>
                     <dd>
-                      <p>
-                        <em class="hidden">black</em>
-                      </p>
-                      <p><em class="hidden">#006EDB</em></p>
-                      <p><em class="hidden">#F56300</em></p>
-                      <span>/ Inter,</span>
-                      <!-- <span>Roboto,</span> -->
-                      <span>Pacifico</span>
+                      HTML5, CSS3(Media Query), JavaScript, jQuery, AJAX, JSON,
+                      Figma, Adobe Premier Pro, Adobe Photoshop, Adobe
+                      Illustrator, W3C 웹표준 통합 마크업 검사(html5/css3),
+                      웹접근성검사(K-WAH), 크로스브라우징 완료
                     </dd>
                   </dl>
 
-                  <dl class="parti">
-                    <dt>제작인원</dt>
-                    <dd>1인 기여도 (100%)</dd>
-                  </dl>
+                  <div class="wrap">
+                    <dl class="colorFont">
+                      <dt>색상 / 폰트</dt>
+                      <dd>
+                        <p>
+                          <em class="hidden">black</em>
+                        </p>
+                        <p><em class="hidden">#006EDB</em></p>
+                        <p><em class="hidden">#F56300</em></p>
+                        <span>/ Inter,</span>
+                        <!-- <span>Roboto,</span> -->
+                        <span>Pacifico</span>
+                      </dd>
+                    </dl>
 
-                  <img class="qr" src="./images/appleqr.svg" alt="애플 반응형 웹사이트 큐알코드">
+                    <dl class="parti">
+                      <dt>제작인원</dt>
+                      <dd>1인 기여도 (100%)</dd>
+                    </dl>
+
+                    <img
+                      class="qr"
+                      src="./images/appleqr.svg"
+                      alt="애플 반응형 웹사이트 큐알코드"
+                    />
+                  </div>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 코레일 -->
+        <section class="section" id="section5">
+          <h2 class="hidden">코레일 팀 프로젝트</h2>
+          <div class="sectionWrap">
+            <ul>
+              <li><img src="./images/profile.png" alt="프로필 이미지" /></li>
+              <li>
+                대단하네요! 마지막으로는 팀 프로젝트를 진행했다고 들었어요😆
+              </li>
+            </ul>
+            <p class="name">너굴 팀장님</p>
+            <ul>
+              <li>
+                네, 맞아요💙 <span>React</span>로
+                <span>공공데이터를 활용한 팀 프로젝트</span>를 진행했답니다🚄
+              </li>
+              <li>
+                <div class="imgBox">
+                  <img
+                    class="pc"
+                    src="./images/모니터3.png"
+                    alt="모니터 이미지"
+                  />
+                  <img
+                    class="gif"
+                    src="./images/korailgif.gif"
+                    alt="코레일gif"
+                  />
+                  <img
+                    class="ipad"
+                    src="./images/코레일아이패드.png"
+                    alt="코레일아이패드이미지"
+                  />
+                  <img
+                    class="mobile"
+                    src="./images/코레일모바일.png"
+                    alt="코레일모바일이미지"
+                  />
                 </div>
 
-              </dl>
-
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- 코레일 -->
-      <section class="section" id="section5">
-        <h2 class="hidden">코레일 팀 프로젝트</h2>
-        <div class="sectionWrap">
-          <ul>
-            <li><img src="./images/profile.png" alt="프로필 이미지"></li>
-            <li>대단하네요! 마지막으로는 팀 프로젝트를 진행했다고 들었어요😆</li>
-          </ul>
-          <p class="name">너굴 팀장님</p>
-          <ul>
-            <li>네, 맞아요💙 <span>React</span>로 <span>공공데이터를 활용한 팀 프로젝트</span>를 진행했답니다🚄</li>
-            <li>
-              <div class="imgBox">
-                <img class="pc" src="./images/모니터3.png" alt="모니터 이미지">
-                <img class="gif" src="./images/korailgif.gif" alt="코레일gif">
-                <img class="ipad" src="./images/코레일아이패드.png" alt="코레일아이패드이미지">
-                <img class="mobile" src="./images/코레일모바일.png" alt="코레일모바일이미지">
-              </div>
-
-              <dl>
-                <dt>코레일 (KORAIL)
-                  <a class="site" href="https://react-project-7fe1c.firebaseapp.com" target="_blank">바로가기
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                  </a>
-                  <a class="github" href="https://github.com/HyeonJeongSim/react-project" target="_blank">
-                    <img src="./images/github.png" alt="깃허브 바로가기 아이콘">
-                    <span class="githubText">깃허브 바로가기</span>
-                  </a>
-
-                </dt>
-                <dd>프레임워크 중 하나인 <strong>React</strong>를 적용하여 팀원과 작업한 웹사이트입니다.
-                  <strong> Firebase Firestore DB, Swiper, MUI (Material-UI)</strong>를 활용하여 UI/UX를 향상시키고 
-                  데이터를 관리했습니다. 효율적인 내부 커스터마이징 방법을 통해 PC, 태블릿, 모바일 각각의 해상도에 맞게 
-                  유동적인 <strong>반응형 웹페이지를 구현</strong>하였습니다.
-                </dd>
                 <dl>
-                  <dt>제작스킬</dt>
-                  <dd>React, Ajax & json , Firebase(firestore database / hosting),
-                    Figma, Adobe Photoshop, Adobe Illustrator,
-                    W3C 웹표준 통합 마크업 검사(html5/css3),
-                    웹접근성검사(K-WAH), 크로스브라우징 완료</dd>
-                </dl>
-                <div class="wrap">
-                  <dl class="colorFont">
-                    <dt>색상 / 폰트</dt>
+                  <dt>
+                    코레일 (KORAIL)
+                    <a
+                      class="site"
+                      href="https://react-project-7fe1c.firebaseapp.com"
+                      target="_blank"
+                      >바로가기
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                    <a
+                      class="github"
+                      href="https://github.com/HyeonJeongSim/react-project"
+                      target="_blank"
+                    >
+                      <img
+                        src="./images/github.png"
+                        alt="깃허브 바로가기 아이콘"
+                      />
+                      <span class="githubText">깃허브 바로가기</span>
+                    </a>
+                  </dt>
+                  <dd>
+                    프레임워크 중 하나인 <strong>React</strong>를 적용하여
+                    팀원과 작업한 웹사이트입니다.
+                    <strong>
+                      Firebase Firestore DB, Swiper, MUI (Material-UI)</strong
+                    >를 활용하여 UI/UX를 향상시키고 데이터를 관리했습니다.
+                    효율적인 내부 커스터마이징 방법을 통해 PC, 태블릿, 모바일
+                    각각의 해상도에 맞게 유동적인
+                    <strong>반응형 웹페이지를 구현</strong>하였습니다.
+                  </dd>
+                  <dl>
+                    <dt>제작스킬</dt>
                     <dd>
-                      <p>
-                        <em class="hidden">red</em>
-                      </p>
-                      <p><em class="hidden">red</em></p>
-                      <p><em class="hidden">red</em></p>
-                      <span>/ Noto Sans KR,</span>
-                      <span>Sans-serif</span>
+                      React, Ajax & json , Firebase(firestore database /
+                      hosting), Figma, Adobe Photoshop, Adobe Illustrator, W3C
+                      웹표준 통합 마크업 검사(html5/css3), 웹접근성검사(K-WAH),
+                      크로스브라우징 완료
                     </dd>
                   </dl>
-                  <dl class="parti">
-                    <dt>제작인원</dt>
-                    <dd>5인</dd>
-                  </dl>
-                  <img class="qr" src="./images/korailqr.svg" alt="코레일 반응형 웹사이트 큐알코드">
-                </div>
+                  <div class="wrap">
+                    <dl class="colorFont">
+                      <dt>색상 / 폰트</dt>
+                      <dd>
+                        <p>
+                          <em class="hidden">red</em>
+                        </p>
+                        <p><em class="hidden">red</em></p>
+                        <p><em class="hidden">red</em></p>
+                        <span>/ Noto Sans KR,</span>
+                        <span>Sans-serif</span>
+                      </dd>
+                    </dl>
+                    <dl class="parti">
+                      <dt>제작인원</dt>
+                      <dd>5인</dd>
+                    </dl>
+                    <img
+                      class="qr"
+                      src="./images/korailqr.svg"
+                      alt="코레일 반응형 웹사이트 큐알코드"
+                    />
+                  </div>
 
-                <!-- <dl class="github">
+                  <!-- <dl class="github">
                   <dt>Github Link</dt>
                   <dd><a href="https://github.com/HyeonJeongSim/react-project" target="_blank">https://github.com/HyeonJeongSim/react-project</a></dd>
                 </dl> -->
-              </dl>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-
-      <section class="section" id="section6">
-        <h2 class="hidden">마지막 느낀점</h2>
-        <div class="messages">
-          <div class="messagesName">
-            <img src="./images/profile.png" alt="프로필이미지">
-            <span>너굴 팀장님</span>
+                </dl>
+              </li>
+            </ul>
           </div>
+        </section>
 
-          <div class="messageWrap">
-            <div class="message received">
-              수고하셨어요! 약 6개월간 총 3개의 프로젝트를 진행하셨네요!
+        <section class="section" id="section6">
+          <h2 class="hidden">마지막 느낀점</h2>
+          <div class="messages">
+            <div class="messagesName">
+              <img src="./images/profile.png" alt="프로필이미지" />
+              <span>너굴 팀장님</span>
             </div>
-            <div class="message received">
-              진행하면서 특별히 느꼈던 점이 있나요?
+
+            <div class="messageWrap">
+              <div class="message received">
+                수고하셨어요! 약 6개월간 총 3개의 프로젝트를 진행하셨네요!
+              </div>
+              <div class="message received">
+                진행하면서 특별히 느꼈던 점이 있나요?
+              </div>
+            </div>
+
+            <div class="messageImg">
+              <img src="./images/me2.png" alt="프로필이미지" />
+              <span>심현정</span>
+            </div>
+            <div class="messageWrap">
+              <div class="message sent">
+                네, 특별히 함께 진행했던 <strong>팀 프로젝트</strong>는
+                저에게<strong> 협업의 중요성</strong>을 배울 수 있는 중요한
+                기회였습니다. <strong>'분업'</strong>을 바탕으로 각자 맡은
+                부분을 책임졌지만, 그 과정에서 <strong>'협업'</strong>을 통해
+                제가 맡지 않은 영역이라도 충분히 이해하고, 함께 문제를 해결하며
+                성장할 수 있었습니다. 특히 <strong>좋은 협업</strong>을 통해
+                <strong>더 빠르고 효율적인 결과</strong>를 도출할 수 있었고,
+                <strong>서로의 지식을 공유</strong>함으로써 더 나은
+                <strong>코드 품질</strong>을 유지할 수 있었습니다.
+              </div>
+              <div class="message sent">
+                이상, 포트폴리오 소개를 마치겠습니다. 감사합니다😄.
+                <a href="#firstPage">다시 보러가기</a>
+              </div>
             </div>
           </div>
-
-          <div class="messageImg">
-            <img src="./images/me2.png" alt="프로필이미지">
-            <span>심현정</span>
+          <div class="message-input">
+            <input type="text" placeholder="메세지 입력" />
+            <button><i class="fa-solid fa-arrow-up"></i></button>
           </div>
-          <div class="messageWrap">
-            <div class="message sent">
-              네, 특별히 함께 진행했던 <strong>팀 프로젝트</strong>는 저에게<strong> 협업의 중요성</strong>을 배울 수 있는 중요한 기회였습니다.
-              <strong>'분업'</strong>을 바탕으로 각자 맡은 부분을 책임졌지만, 그 과정에서 <strong>'협업'</strong>을 통해
-              제가 맡지 않은 영역이라도 충분히 이해하고, 함께 문제를 해결하며 성장할 수 있었습니다.
-              특히 <strong>좋은 협업</strong>을 통해 <strong>더 빠르고 효율적인 결과</strong>를 도출할 수 있었고,
-              <strong>서로의 지식을 공유</strong>함으로써 더 나은 <strong>코드 품질</strong>을 유지할 수 있었습니다.
-            </div>
-            <div class="message sent">
-              이상, 포트폴리오 소개를 마치겠습니다. 감사합니다😄. <a href="#firstPage">다시 보러가기</a>
-            </div>
-          </div>
-        </div>
-        <div class="message-input">
-          <input type="text" placeholder="메세지 입력">
-          <button><i class="fa-solid fa-arrow-up"></i></button>
-        </div>
-      </section>
-    </div>
-  </article>
+        </section>
+      </div>
+    </article>
 
+    <!-- <script src="./js/fullpage.min.js"></script> -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery.fullPage.min.js"></script>
+    <!-- <script  src="./common.js"></script> -->
+    <script>
+      $("#fullpage").fullpage({
+        sectionsColor: ["#ccc", "#ccc", "#eee", "#222", "#ccc", "#fff"],
+        anchors: [
+          "firstPage",
+          "secondPage",
+          "3rdPage",
+          "5thPage",
+          "6thPage",
+          "lastPage",
+        ],
+        menu: "#menu",
+        navigation: true,
+        verticalCentered: false,
+      });
+    </script>
 
-  <!-- <script src="./js/fullpage.min.js"></script> -->
-  <script src="./js/jquery-1.12.4.min.js"></script>
-  <script src="./js/jquery.fullPage.min.js"></script>
-  <!-- <script  src="./common.js"></script> -->
-  <script>
-    $('#fullpage').fullpage({
-      sectionsColor: ['#ccc', '#ccc', '#eee', '#222', '#ccc', '#fff'],
-      anchors: ['firstPage', 'secondPage', '3rdPage', '5thPage', '6thPage', 'lastPage'],
-      menu: '#menu',
-      navigation: true,
-      verticalCentered: false,
-    });
-  </script>
+    <script>
+      function openChat(element, roomName) {
+        // 채팅 목록 컨테이너를 왼쪽으로 이동
+        document.querySelector(".chat-list-container").classList.add("shifted");
 
-  <script>
-    function openChat(element, roomName) {
-      // 채팅 목록 컨테이너를 왼쪽으로 이동
-      document.querySelector('.chat-list-container').classList.add('shifted');
+        // 모든 채팅 아이템에서 active 클래스 제거
+        const chatItems = document.querySelectorAll(".chat-item");
+        chatItems.forEach((item) => item.classList.remove("active"));
 
-      // 모든 채팅 아이템에서 active 클래스 제거
-      const chatItems = document.querySelectorAll('.chat-item');
-      chatItems.forEach(item => item.classList.remove('active'));
+        // 클릭된 채팅 아이템에 active 클래스 추가
+        element.classList.add("active");
 
-      // 클릭된 채팅 아이템에 active 클래스 추가
-      element.classList.add('active');
+        // 채팅방 이름 설정
+        document.getElementById("chat-room-name").textContent = roomName;
 
-      // 채팅방 이름 설정
-      document.getElementById('chat-room-name').textContent = roomName;
-
-      // 대화창 활성화
-      document.querySelector('.chat-conversation').classList.add('active');
-    }
-  </script>
-</body>
-
+        // 대화창 활성화
+        document.querySelector(".chat-conversation").classList.add("active");
+      }
+    </script>
+  </body>
 </html>
