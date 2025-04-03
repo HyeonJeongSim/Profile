@@ -219,7 +219,7 @@ header .head_ttl strong {
   display: flex;
   border-bottom: 1px solid #ddd;
   padding: 30px 0;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 #contentArea .toggle-container dl > dd > dl:nth-of-type(2) {
@@ -254,6 +254,7 @@ header .head_ttl strong {
   width: 65%;
   font-size: 1.1rem;
 }
+
 #contentArea .certificate .toggle-container dd {
   text-align: center;
 }
@@ -331,7 +332,7 @@ header .head_ttl strong {
   gap: 10px;
 }
 #contentArea .profileWrap thead {
-  width: 45%;
+  width: 40%;
   background: #f4f4f4;
 }
 #contentArea .school table {
@@ -371,7 +372,9 @@ header .head_ttl strong {
 #contentArea .expe .acheive:nth-of-type(2) {
   margin-top: 25px;
 }
-
+#contentArea .expe .work dd {
+  width: 100%;
+}
 #contentArea .toggle-container .list {
   display: flex;
   flex-direction: column;
@@ -394,7 +397,13 @@ header .head_ttl strong {
 #contentArea .expe .toggle-container dl:first-child {
   gap: 0 16.8%;
 }
-#contentArea .expe .toggle-container .list dd {
+
+#contentArea .expe .expe1,
+#contentArea .expe .expe2 {
+  justify-content: flex-start;
+}
+
+#contentArea .expe .expe .toggle-container .list dd {
   width: 100%;
 }
 
