@@ -174,7 +174,7 @@ header .head_ttl span {
   margin-left: 3%;
 }
 header .head_ttl strong {
-  color: #e58d6f;
+  color: #f0a68d;
 }
 
 /* contentArea (article) */
@@ -247,8 +247,11 @@ header .head_ttl strong {
   font-size: 1.2em;
   font-weight: 500;
 }
+#contentArea .toggle-container dt > strong:nth-of-type(2) {
+  color: #f0a68d;
+}
 #contentArea .toggle-container dt > span {
-  color: #e58d6f;
+  color: #f0a68d;
 }
 #contentArea .toggle-container dd {
   width: 65%;
@@ -269,7 +272,7 @@ header .head_ttl strong {
   transition: all 0.3s ease-out;
 }
 #contentArea .toggle-container dd a:hover {
-  background: #eac9be;
+  background: #f0a68d;
   color: #fff;
   transition: all 0.3s ease-out;
 }
