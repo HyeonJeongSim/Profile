@@ -9,7 +9,8 @@
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="../images/favicon.ico" />
+      href="../images/favicon.ico"
+    />
   </head>
   <body>
     <div class="wrap">
@@ -35,7 +36,7 @@
           <section class="profile">
             <h3>프로필</h3>
             <div class="profileWrap">
-              <table>
+              <table class="personal">
                 <thead>
                   <tr>
                     <th>성명</th>
@@ -66,7 +67,7 @@
                 </tbody>
               </table>
 
-              <table>
+              <table class="personal">
                 <thead>
                   <tr>
                     <th>영문</th>
@@ -111,24 +112,24 @@
                   <td>경북대학교 <span>(4년제)</span></td>
                   <td>영어영문학과</td>
                   <td>편입/졸업</td>
-                  <td>4.0/4.5</td>
+                  <td>4.0 / 4.5</td>
                   <td>대구</td>
                 </tr>
                 <tr>
                   <td>2016.09~2018.07</td>
                   <td>
-                    University of Santo Tomas<br />
+                    University of Santo Tomas
                     <span>(4년제)</span>
                   </td>
                   <td>광고디자인학과</td>
                   <td>수료</td>
-                  <td>1.31/1.0</td>
+                  <td>1.31 / 1.0</td>
                   <td>필리핀 (마닐라)</td>
                 </tr>
                 <tr>
                   <td>2015.10~2016.07</td>
                   <td>
-                    Eagle's View Academy<br />
+                    Eagle's View Academy
                     <span>(고등학교)</span>
                   </td>
                   <td>-</td>
@@ -139,7 +140,7 @@
                 <tr>
                   <td>2012.09~2015.07</td>
                   <td>
-                    Trinity University of Aisa<br />
+                    Trinity University of Aisa
                     <span>(중, 고등학교)</span>
                   </td>
                   <td>-</td>
@@ -213,7 +214,7 @@
               <dt>JQuery</dt>
               <dd>
                 JQuery 를 이용한 다양한 동적 기능과 이벤트를 구현할 수 있습니다.
-                Ajax, DOM 조작, 이벤트 핸들링, 간단한 UI 효과 구현이 가능합니다.
+                AJAX, DOM 조작, 이벤트 핸들링, 간단한 UI 효과 구현이 가능합니다.
               </dd>
             </dl>
             <dl>
@@ -328,31 +329,35 @@
 
         <section class="expe">
           <h3>경력사항</h3>
-          <a class="toggle-btn" data-container="toggle-7" href="#"
-            ><span class="hidden">펼쳐보기</span>
-            <i class="fa-solid fa-angle-down"></i
-          ></a>
+          <a class="toggle-btn" data-container="toggle-7" href="#">
+            <span class="hidden">펼쳐보기</span>
+            <i class="fa-solid fa-angle-down"></i>
+          </a>
           <div class="toggle-container" id="toggle-7">
-            <dl>
+            <dl class="expedl">
               <dt>
                 <strong>한국마이콤</strong><br />
                 <span>업종 : 산업용 냉동기기 제조, 설치, 납품</span> <br />
                 <span>매출액 : 약 730억</span>
               </dt>
               <dl class="list">
-                <dt class="acheive"><strong>담당업무 : 기술영업</strong></dt>
-                <dd>
+                <dt><strong>담당업무 : 기술영업</strong></dt>
+                <dd class="expelist">
                   <ul>
-                    <li>기술 견적서 작성, 국내외 고객사 영업, 컴프레셔 설계</li>
                     <li>
-                      엑셀을 활용한 원가서 작성, 프로젝트별 Technical Evaluation
-                      List 작성
+                      국내외 고객사와의 기술 커뮤니케이션을 통해 요구사항을
+                      파악하고, 맞춤형 솔루션을 제안하는 B2B 기술영업 수행
                     </li>
-                    <li>AutoCad를 활용한 고객 맞춤 P&ID/GAD 작업</li>
+                    <li>기술 견적서 및 Technical Evaluation 문서 작성</li>
+                    <li>
+                      엑셀을 활용하여 복잡한 원가 데이터를 체계적으로 정리 및
+                      분석하고, 프로젝트별 기술 요건을 문서화하여 내부 설계팀과
+                      공유
+                    </li>
                   </ul>
                 </dd>
               </dl>
-              <dl class="list">
+              <!-- <dl class="list">
                 <dt class="acheive"><strong>주요성과</strong></dt>
                 <dd>
                   Salmon Farm Construction Project에서 동원산업 및 Salmon
@@ -361,11 +366,11 @@
                   30개 이상의 기업 실적을 바탕으로 신뢰 구축.
                 </dd>
 
-                <!-- <dt class="acheive"><strong>주요성과 II</strong></dt>
-                            <dd>엑셀을 활용해 과거 진행 되었던 유사 프로젝트를 정리하여 예가 견적서 작성 시 업무 효율 80% 향상 및 빠른 대응으로 고객 만족도 향상.</dd> -->
-              </dl>
+                <dt class="acheive"><strong>주요성과 II</strong></dt>
+                            <dd>엑셀을 활용해 과거 진행 되었던 유사 프로젝트를 정리하여 예가 견적서 작성 시 업무 효율 80% 향상 및 빠른 대응으로 고객 만족도 향상.</dd>
+              </dl> -->
             </dl>
-            <dl>
+            <dl class="expedl">
               <dt>
                 <strong>파워플레이어 (온그리디언츠)</strong> <br />
                 <span>업종 : 화장품 제조사</span> <br />
@@ -373,35 +378,38 @@
               </dt>
               <dl class="list">
                 <dt><strong>담당업무 : 해외영업 및 해외마케팅</strong></dt>
-                <dd>
+                <dd class="expelist">
                   <ul>
-                    <li>해외 출장 및 온/오프라인 수출 상담회 전담</li>
                     <li>
-                      베트남, 캄보디아, 대만, 인도네시아 등 아시아권 B2B 거래처
-                      관리
+                      해외 타깃 소비자 니즈를 반영한 SNS 콘텐츠 기획 및 제작
+                      (Instagram, TikTok 중심)
                     </li>
                     <li>
-                      영상 제작팀 및 디자인팀과 협업하여 인스타그램/틱톡 콘텐츠
-                      기획 및 제작
+                      디자인팀·영상팀·글로벌 인플루언서와 협업하여 마케팅 콘텐츠
+                      및 프로모션 기획 수행
+                    </li>
+                    <li>
+                      BRAND24 키워드 분석 및 시딩 데이터 기반으로 콘텐츠 전략
+                      수립 및 성과 도출 (일 평균 80건 확보)
                     </li>
                   </ul>
                 </dd>
               </dl>
-              <dl class="list">
-                <!-- <dt class="acheive"><strong>주요성과 I</strong></dt>
+              <!-- <dl class="list">
+                <dt class="acheive"><strong>주요성과 I</strong></dt>
                 <dd>
                   2024 K-Lifestyle in Africa B2B 수출 상담을 통해 6박스 수주
                   확보, 남아프리카를 거점으로 동·서아프리카로의 수출 확대 추진.
                   초기 소량 발주 후, 2차 발주 시 MOQ 10박스로 협의하여 성공적인
                   발주 확보.
-                </dd> -->
+                </dd>
                 <dt class="acheive"><strong>주요성과</strong></dt>
                 <dd>
                   2030 타겟 소비자들을 대상으로 재미와 유행 요소를 결합한
                   giveaway 콘텐츠를 제작. 조회 수 약 2.2만 회 달성 및 팔로워 약
                   1,000명 증가.
                 </dd>
-              </dl>
+              </dl> -->
             </dl>
           </div>
         </section>
@@ -548,6 +556,7 @@
     <script src="./resume.js"></script>
     <script
       src="https://kit.fontawesome.com/33cd326170.js"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
