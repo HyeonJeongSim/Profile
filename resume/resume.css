@@ -150,9 +150,9 @@ header {
   border-bottom: 1px solid #000;
 }
 header .image {
-  border-radius: 50%;
+  border-radius: 30px;
   overflow: hidden;
-  width: 30%;
+  width: 20%;
 }
 header .head_main {
   display: flex;
