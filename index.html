@@ -7,10 +7,20 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="./common.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/jquery.fullPage.min.css" />
@@ -76,13 +86,15 @@
               <div class="search-bar">
                 <input
                   type="text"
-                  placeholder="채팅방 검색 (이름 또는 채팅방 검색)" />
+                  placeholder="채팅방 검색 (이름 또는 채팅방 검색)"
+                />
                 <i class="fa-solid fa-magnifying-glass"></i>
               </div>
               <div class="chat-list">
                 <div
                   class="chat-item"
-                  onclick="openChat(this, '심현정님 포트폴리오 소개방')">
+                  onclick="openChat(this, '심현정님 포트폴리오 소개방')"
+                >
                   <div class="profile-img">
                     <img src="./images/profile1.png" alt="프로필" />
                   </div>
@@ -211,9 +223,8 @@
               <div class="profileRight">
                 <div class="profileTop">
                   <span>반갑습니다!</span>
-                  <strong> 작은 불편도 놓치지 않는</strong>
-                  <br />
-                  <span>웹 퍼블리셔 & 프론트엔드 개발자,</span>
+                  <!-- <strong> 작은 불편도 놓치지 않는</strong><br /> -->
+                  <strong>웹 퍼블리셔 & 프론트엔드 개발자,</strong>
                   <br />
                   <strong class="bigger">심현정</strong>
                   <span class="bigger">입니다.</span>
@@ -222,7 +233,13 @@
                 <dl class="techStack">
                   <dt>TECH STACK</dt>
                   <dd>
+                    HTML5 / CSS3 / JavaScript / Typescript / jQuery / Bootstrap
+                    / Saas / 비동기처리 (AJAX, JSON) / php / Mysql / React /
+                    Firebase / Git / Github / Figma / Adobe Photoshop / Adobe
+                    Illustrator / Adobe Premiere Pro / Microsoft Powerpoint /
+                    Microsoft Word
                     <ul>
+                      <li><img src="./images/vscode.png" alt="" /></li>
                       <li><img src="./images/html5.png" alt="" /></li>
                       <li><img src="./images/css3.png" alt="" /></li>
                       <li><img src="./images/js.png" alt="" /></li>
@@ -232,13 +249,9 @@
                       <li><img src="./images/ajax.png" alt="" /></li>
                       <li><img src="./images/json.png" alt="" /></li>
                       <li><img src="./images/php.svg" alt="" /></li>
-                    </ul>
-                    <ul>
-                      <li><img src="./images/mysql.png" alt="" /></li>
-                      <li><img src="./images/typescript.png" alt="" /></li>
                       <li><img src="./images/bootstrap.png" alt="" /></li>
+                      <li><img src="./images/sass.png" alt="" /></li>
                       <li><img src="./images/github.png" alt="" /></li>
-                      <li><img src="./images/vscode.png" alt="" /></li>
                       <li><img src="./images/figma.png" alt="" /></li>
                       <li><img src="./images/photoshop.png" alt="" /></li>
                       <li><img src="./images/illur.png" alt="" /></li>
@@ -246,28 +259,29 @@
                     </ul>
                   </dd>
                 </dl>
+                <div class="profileInfoWrap">
+                  <div class="profileInfo">
+                    <dl>
+                      <dt>🎂 생년월일 :</dt>
+                      <dd>1998.10.28</dd>
+                    </dl>
+                    <dl>
+                      <dt>📝 지원분야 :</dt>
+                      <dd>웹 퍼블리셔 & 프론트엔드</dd>
+                    </dl>
+                  </div>
 
-                <div class="profileInfo">
-                  <dl>
-                    <dt>생년월일 :</dt>
-                    <dd>1998.10.28</dd>
-                  </dl>
+                  <div class="profileInfo">
+                    <dl>
+                      <dt>📧 이메일 :</dt>
+                      <dd>hj3296000@naver.com</dd>
+                    </dl>
 
-                  <dl>
-                    <dt>이메일 :</dt>
-                    <dd>hj3296000@naver.com</dd>
-                  </dl>
-                </div>
-
-                <div class="profileInfo">
-                  <dl>
-                    <dt>지원분야 :</dt>
-                    <dd>웹 퍼블리셔 & 프론트엔드</dd>
-                  </dl>
-                  <dl>
-                    <dt>전화번호 :</dt>
-                    <dd>010-7595-3299</dd>
-                  </dl>
+                    <dl>
+                      <dt>☎️ 전화번호 :</dt>
+                      <dd>010.7595.3299</dd>
+                    </dl>
+                  </div>
                 </div>
               </div>
             </div>
@@ -320,10 +334,12 @@
                     <a
                       class="github"
                       href="https://github.com/HyeonJeongSim/PC-Project"
-                      target="_blank">
+                      target="_blank"
+                    >
                       <img
                         src="./images/github.png"
-                        alt="깃허브 바로가기 아이콘" />
+                        alt="깃허브 바로가기 아이콘"
+                      />
                       <span class="githubText">깃허브 바로가기</span>
                     </a>
                   </dt>
@@ -401,17 +417,20 @@
                     <a
                       class="site"
                       href="https://hj3296000.mycafe24.com/media"
-                      target="_blank">
+                      target="_blank"
+                    >
                       바로가기
                       <i class="fa-solid fa-arrow-up-right-from-square"></i
                     ></a>
                     <a
                       class="github"
                       href="https://github.com/HyeonJeongSim/Responsive-Project"
-                      target="_blank">
+                      target="_blank"
+                    >
                       <img
                         src="./images/github.png"
-                        alt="깃허브 바로가기 아이콘" />
+                        alt="깃허브 바로가기 아이콘"
+                      />
                       <span class="githubText">깃허브 바로가기</span>
                     </a>
                   </dt>
@@ -458,7 +477,8 @@
                     <img
                       class="qr"
                       src="./images/appleqr.svg"
-                      alt="애플 반응형 웹사이트 큐알코드" />
+                      alt="애플 반응형 웹사이트 큐알코드"
+                    />
                   </div>
                 </dl>
               </li>
@@ -487,19 +507,23 @@
                   <img
                     class="pc"
                     src="./images/모니터3.png"
-                    alt="모니터 이미지" />
+                    alt="모니터 이미지"
+                  />
                   <img
                     class="gif"
                     src="./images/korailgif.gif"
-                    alt="코레일gif" />
+                    alt="코레일gif"
+                  />
                   <img
                     class="ipad"
                     src="./images/코레일아이패드.png"
-                    alt="코레일아이패드이미지" />
+                    alt="코레일아이패드이미지"
+                  />
                   <img
                     class="mobile"
                     src="./images/코레일모바일.png"
-                    alt="코레일모바일이미지" />
+                    alt="코레일모바일이미지"
+                  />
                 </div>
 
                 <dl>
@@ -515,10 +539,12 @@
                     <a
                       class="github"
                       href="https://github.com/HyeonJeongSim/react-project"
-                      target="_blank">
+                      target="_blank"
+                    >
                       <img
                         src="./images/github.png"
-                        alt="깃허브 바로가기 아이콘" />
+                        alt="깃허브 바로가기 아이콘"
+                      />
                       <span class="githubText">깃허브 바로가기</span>
                     </a>
                   </dt>
@@ -561,7 +587,8 @@
                     <img
                       class="qr"
                       src="./images/korailqr.svg"
-                      alt="코레일 반응형 웹사이트 큐알코드" />
+                      alt="코레일 반응형 웹사이트 큐알코드"
+                    />
                   </div>
 
                   <!-- <dl class="github">

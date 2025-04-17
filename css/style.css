@@ -492,24 +492,24 @@ section:nth-child(6) {background: #d0d5ff;} */
   margin: 0 0 0 170px;
   border-radius: 35px;
   border-top-right-radius: 5px;
-  padding: 45px 70px;
+  padding: 30px 80px;
   display: flex;
   align-items: center;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
   justify-content: space-around;
+  gap: 90px;
 }
 .profileImage {
-  width: 100%;
 }
 .profileImage img {
-  width: 80%;
-  border-radius: 20px;
+  width: 100%;
+  border-radius: 30px;
 }
 
 .profileRight {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
   align-items: flex-start;
 }
 
@@ -517,19 +517,35 @@ section:nth-child(6) {background: #d0d5ff;} */
   width: 100%;
   text-align: left;
 }
+#section1 .profileRight .techStack dd {
+  margin-top: 10px;
+}
+#section1 .profileRight .techStack::after {
+  content: "";
+  height: 1px;
+  background: #ccc;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
 #section1 .profileRight .techStack dt {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
   background: #3a76f0;
   border-radius: 50px;
   color: #fff;
   width: max-content;
-  padding: 10px 30px;
+  padding: 5px 20px;
 }
 
 #section1 .profileRight .techStack ul {
   display: flex;
   flex-direction: row;
+  margin: 10px 0;
+  width: 100%;
+  justify-content: space-between;
+  gap: 10px;
 }
 #section1 .profileRight .techStack ul li {
   background: transparent;
@@ -538,16 +554,26 @@ section:nth-child(6) {background: #d0d5ff;} */
   color: transparent;
   font-size: 0;
   box-shadow: 0 0 0 0;
-  width: 100%;
+  width: 10%;
 }
 #section1 .profileRight .techStack ul li img {
   border-radius: 0;
   background: transparent;
   border: 0;
+  width: 100%;
 }
 
 .profileTop {
   text-align: left;
+  width: 100%;
+}
+.profileTop::after {
+  content: "";
+  height: 1px;
+  background: #ccc;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .profileTop span {
@@ -561,17 +587,25 @@ section:nth-child(6) {background: #d0d5ff;} */
 }
 
 .profileTop .bigger {
-  font-size: 2.8rem;
+  font-size: 3rem;
 }
 
+#section1 .profileInfoWrap {
+  display: flex;
+  gap: 50px;
+}
 #section1 .profileInfo {
   display: flex;
-  gap: 30px;
   text-align: left;
+  flex-direction: column;
+  gap: 10px;
 }
 #section1 .profileInfo dl {
   display: flex;
-  gap: 20px;
+  gap: 10px;
+  font-size: 1.1rem;
+}
+#section1 .profileInfo dl dt {
 }
 
 #section1 ul:nth-of-type(1) {
