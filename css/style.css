@@ -784,7 +784,6 @@ section:nth-child(6) {background: #d0d5ff;} */
   margin: 0;
   width: 100%;
   display: block;
-  list-style: disc;
 }
 
 #section2 .explain li,
@@ -798,6 +797,25 @@ section:nth-child(6) {background: #d0d5ff;} */
   color: #000;
   display: block;
   width: 100%;
+}
+
+#section2 .explain:hover li em,
+#section4 .explain:hover li em,
+#section5 .explain:hover li em {
+  transition: all 0.3s ease-in-out;
+}
+
+#section2 .explain:hover li em {
+  background: #ffe5e7;
+  border-radius: 5px;
+}
+#section4 .explain:hover li em {
+  background: #ffdfca;
+  border-radius: 5px;
+}
+#section5 .explain:hover li em {
+  background: #bedfff;
+  border-radius: 5px;
 }
 
 /* section2 */
@@ -970,10 +988,6 @@ section:nth-child(6) {background: #d0d5ff;} */
 }
 
 /* 애플 */
-/* #section4 ul:nth-of-type(1) li:nth-of-type(2) {
-  text-align: left;
-  padding: 20px 50px;
-} */
 
 #section4 .colorFont dd > p:nth-of-type(1) {
   background: #000;
