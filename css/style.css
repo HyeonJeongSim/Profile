@@ -580,10 +580,15 @@ section:nth-child(6) {background: #d0d5ff;} */
   font-size: 1.5rem;
   font-weight: 500;
 }
-.profileTop strong {
+.profileTop em {
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #3a76f0;
+}
+
+.profileTop strong {
+  color: #3a76f0;
+  font-weight: 800;
 }
 
 .profileTop .bigger {
