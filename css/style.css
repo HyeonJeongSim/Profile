@@ -747,7 +747,7 @@ section:nth-child(6) {background: #d0d5ff;} */
   align-items: center;
   justify-content: center;
   padding: 60px 0;
-  width: 95%;
+  width: 100%;
   border-radius: 40px;
   border-top-right-radius: 5px;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
@@ -775,6 +775,29 @@ section:nth-child(6) {background: #d0d5ff;} */
   left: -5%;
   width: 90%;
   z-index: 10;
+}
+
+#section2 .explain,
+#section4 .explain,
+#section5 .explain {
+  display: block;
+  margin: 0;
+  width: 100%;
+  display: block;
+  list-style: disc;
+}
+
+#section2 .explain li,
+#section4 .explain li,
+#section5 .explain li {
+  padding: 0;
+  font-size: 1.1rem;
+  border-radius: 0;
+  box-shadow: 0 0 0 0;
+  background: none;
+  color: #000;
+  display: block;
+  width: 100%;
 }
 
 /* section2 */
@@ -947,10 +970,10 @@ section:nth-child(6) {background: #d0d5ff;} */
 }
 
 /* 애플 */
-#section4 ul:nth-of-type(1) li:nth-of-type(2) {
+/* #section4 ul:nth-of-type(1) li:nth-of-type(2) {
   text-align: left;
   padding: 20px 50px;
-}
+} */
 
 #section4 .colorFont dd > p:nth-of-type(1) {
   background: #000;
@@ -985,19 +1008,11 @@ section:nth-child(6) {background: #d0d5ff;} */
   font-weight: 700;
 }
 
-#section4 ul:nth-of-type(1) {
-  margin-top: 50px;
-}
-
 #section4 .githubText {
   background: #f56300;
 }
 
 /* 코레일*/
-#section5 ul:nth-of-type(1) li:nth-of-type(2) {
-  text-align: left;
-  padding: 20px 50px;
-}
 
 #section5 .colorFont dd > p:nth-of-type(1) {
   background: #000;
@@ -1032,9 +1047,9 @@ section:nth-child(6) {background: #d0d5ff;} */
   font-weight: 700;
 }
 
-#section5 ul:nth-of-type(1) {
+/* #section5 ul:nth-of-type(1) {
   margin-top: 50px;
-}
+} */
 
 #section5 ul li dl dd > strong {
   color: #45a5fc;

@@ -7,12 +7,13 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet" />
+    <link
       rel="stylesheet"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="./common.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/jquery.fullPage.min.css" />
@@ -78,15 +79,13 @@
               <div class="search-bar">
                 <input
                   type="text"
-                  placeholder="채팅방 검색 (이름 또는 채팅방 검색)"
-                />
+                  placeholder="채팅방 검색 (이름 또는 채팅방 검색)" />
                 <i class="fa-solid fa-magnifying-glass"></i>
               </div>
               <div class="chat-list">
                 <div
                   class="chat-item"
-                  onclick="openChat(this, '심현정님 포트폴리오 소개방')"
-                >
+                  onclick="openChat(this, '심현정님 포트폴리오 소개방')">
                   <div class="profile-img">
                     <img src="./images/profile1.png" alt="프로필" />
                   </div>
@@ -215,7 +214,10 @@
               <div class="profileRight">
                 <div class="profileTop">
                   <span>반갑습니다!</span>
-                  <!-- <strong> 작은 불편도 놓치지 않는</strong><br /> -->
+                  <strong>끈기</strong>
+                  <span>있게 개발에 몰두하고 활발히</span>
+                  <strong>소통</strong><span>하는</span>
+                  <br />
                   <strong>웹 퍼블리셔 & 프론트엔드 개발자,</strong>
                   <br />
                   <strong class="bigger">심현정</strong>
@@ -300,13 +302,14 @@
           <div class="sectionWrap">
             <ul>
               <li><img src="./images/profile.png" alt="프로필 이미지" /></li>
-              <li>첫번째 프로젝트에 대해 소개해주세요!😊</li>
+              <li>첫 번째 프로젝트에 대해 소개해주세요!😊</li>
             </ul>
             <p class="name">너굴 팀장님</p>
 
             <ul>
               <li>
-                네, 첫번째로 <span>기업형 PC 프로젝트</span>를 소개해드릴게요!😄
+                네, 첫 번째로 <span>기업형 PC 프로젝트</span>를
+                소개해드릴게요!😄
               </li>
               <li>
                 <div class="imgBox">
@@ -326,27 +329,36 @@
                     <a
                       class="github"
                       href="https://github.com/HyeonJeongSim/PC-Project"
-                      target="_blank"
-                    >
+                      target="_blank">
                       <img
                         src="./images/github.png"
-                        alt="깃허브 바로가기 아이콘"
-                      />
+                        alt="깃허브 바로가기 아이콘" />
                       <span class="githubText">깃허브 바로가기</span>
                     </a>
                   </dt>
                   <dd>
-                    XHTML 1.0 기반 사이트를 HTML5와 CSS3로 재구현했습니다.
-                    <strong
-                      >시멘틱 태그를 활용해 SEO 최적화 및 아웃라인을
-                      재구성</strong
-                    >했으며,
-                    <strong
-                      >jQuery로 header 및 nav 영역의 드롭다운 기능을
-                      적용</strong
-                    >했습니다. 또한,
-                    <strong>이미지로 제공되던 텍스트를 웹 폰트로 변경</strong
-                    >하여 사용자 경험을 향상했습니다.
+                    <ul class="explain">
+                      <li>
+                        <i class="fa-solid fa-check"></i> XHTML 1.0 기반
+                        사이트를 HTML5와 CSS3로 재구현
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-check"></i> 시멘틱 태그를 활용해
+                        SEO 최적화 및 아웃라인을 재구성
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-check"></i> jQuery로 header 및 nav
+                        영역의 드롭다운 기능을 적용
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-check"></i> 이미지로 제공되던
+                        텍스트를 웹 폰트로 변경
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-check"></i> php를 기반
+                        로그인/회원가입/아이디찾기/비밀번호찾기 페이지 구현
+                      </li>
+                    </ul>
                   </dd>
                   <dl>
                     <dt>제작스킬</dt>
@@ -391,11 +403,11 @@
           <div class="sectionWrap">
             <ul>
               <li><img src="./images/profile.png" alt="프로필 이미지" /></li>
-              <li>멋진데요?! 세번째 프로젝트는 무엇인가요?😲</li>
+              <li>멋진데요?! 두 번째 프로젝트는 무엇인가요?😲</li>
             </ul>
             <p class="name">너굴 팀장님</p>
             <ul>
-              <li>세번째로는 <span>반응형 프로젝트</span>를 진행했습니다!🧡</li>
+              <li>두 번째로는 <span>반응형 프로젝트</span>를 진행했습니다!</li>
               <li>
                 <div class="imgBox">
                   <img class="pc" src="./images/모니터3.png" alt="" />
@@ -409,31 +421,40 @@
                     <a
                       class="site"
                       href="https://hj3296000.mycafe24.com/media"
-                      target="_blank"
-                    >
+                      target="_blank">
                       바로가기
                       <i class="fa-solid fa-arrow-up-right-from-square"></i
                     ></a>
                     <a
                       class="github"
                       href="https://github.com/HyeonJeongSim/Responsive-Project"
-                      target="_blank"
-                    >
+                      target="_blank">
                       <img
                         src="./images/github.png"
-                        alt="깃허브 바로가기 아이콘"
-                      />
+                        alt="깃허브 바로가기 아이콘" />
                       <span class="githubText">깃허브 바로가기</span>
                     </a>
                   </dt>
                   <dd>
-                    <strong>Media Query</strong>를 활용해
-                    <strong>디바이스별 해상도</strong>에 최적화된 UI를 설계하고,
-                    <br />
-                    <strong>Flex와 Grid</strong>를 사용하여 다양한 레이아웃을
-                    적용했습니다. <strong>Magnific Popup 플러그인</strong>으로
-                    <strong>영상이 페이지 내부에서 팝업 형태로 재생</strong
-                    >되도록 구현했습니다.
+                    <ul class="explain">
+                      <li>
+                        <i class="fa-solid fa-check"></i> Media Query를 활용해
+                        디바이스별 해상도에 최적화된 UI를 설계
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-check"></i> Flex와 Grid를 사용하여
+                        반응형에 유연한 레이아웃 적용
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-check"></i> Magnific Popup
+                        플러그인으로 페이지 내 팝업 형태로 영상이 재생되도록
+                        구현
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-check"></i> Tab메뉴, 아코디언,
+                        Swiper 등의 기능을 추가하여 동적 효과 적용
+                      </li>
+                    </ul>
                   </dd>
 
                   <dl>
@@ -469,8 +490,7 @@
                     <img
                       class="qr"
                       src="./images/appleqr.svg"
-                      alt="애플 반응형 웹사이트 큐알코드"
-                    />
+                      alt="애플 반응형 웹사이트 큐알코드" />
                   </div>
                 </dl>
               </li>
@@ -491,31 +511,27 @@
             <p class="name">너굴 팀장님</p>
             <ul>
               <li>
-                네, 맞아요💙 <span>React</span>로
-                <span>공공데이터를 활용한 팀 프로젝트</span>를 진행했답니다🚄
+                네, 맞아요! <span>React</span>기반
+                <span>공공데이터를 활용한 팀 프로젝트</span>를 진행했습니다😉!
               </li>
               <li>
                 <div class="imgBox">
                   <img
                     class="pc"
                     src="./images/모니터3.png"
-                    alt="모니터 이미지"
-                  />
+                    alt="모니터 이미지" />
                   <img
                     class="gif"
                     src="./images/korailgif.gif"
-                    alt="코레일gif"
-                  />
+                    alt="코레일gif" />
                   <img
                     class="ipad"
                     src="./images/코레일아이패드.png"
-                    alt="코레일아이패드이미지"
-                  />
+                    alt="코레일아이패드이미지" />
                   <img
                     class="mobile"
                     src="./images/코레일모바일.png"
-                    alt="코레일모바일이미지"
-                  />
+                    alt="코레일모바일이미지" />
                 </div>
 
                 <dl>
@@ -531,24 +547,34 @@
                     <a
                       class="github"
                       href="https://github.com/HyeonJeongSim/react-project"
-                      target="_blank"
-                    >
+                      target="_blank">
                       <img
                         src="./images/github.png"
-                        alt="깃허브 바로가기 아이콘"
-                      />
+                        alt="깃허브 바로가기 아이콘" />
                       <span class="githubText">깃허브 바로가기</span>
                     </a>
                   </dt>
                   <dd>
-                    프레임워크 중 하나인 <strong>React</strong>를 적용하여
-                    팀원과 작업한 웹사이트입니다.
-                    <strong>
-                      Firebase Firestore DB, Swiper, MUI (Material-UI)</strong
-                    >를 활용하여 UI/UX를 향상시키고 데이터를 관리했습니다.
-                    효율적인 내부 커스터마이징 방법을 통해 PC, 태블릿, 모바일
-                    각각의 해상도에 맞게 유동적인
-                    <strong>반응형 웹페이지를 구현</strong>하였습니다.
+                    <ul class="explain">
+                      <li>
+                        <i class="fa-solid fa-check"></i> 다량의 데이터를
+                        효율적으로 정리하여 유지보수가 쉽도록 Firestore를
+                        사용하여 역 위치정보를 제공
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-check"></i> 역 위치정보 페이지의
+                        실시간 위치 정보를 빠르게 조회하도록 검색기능 구현
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-check"></i> 데이터의 실시간 동기화
+                        기능으로 역 위치 정보 변경 시 즉각적인 UI 반영이 되도록
+                        설계
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-check"></i>
+                        Swiper, MUI (Material-UI)를 활용하여 UI/UX를 향상
+                      </li>
+                    </ul>
                   </dd>
                   <dl>
                     <dt>제작스킬</dt>
@@ -579,8 +605,7 @@
                     <img
                       class="qr"
                       src="./images/korailqr.svg"
-                      alt="코레일 반응형 웹사이트 큐알코드"
-                    />
+                      alt="코레일 반응형 웹사이트 큐알코드" />
                   </div>
 
                   <!-- <dl class="github">
